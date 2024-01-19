@@ -1,2 +1,2 @@
-# tourishwebsite
+# tourismwebsite
 an demo tourism-website
