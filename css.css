@@ -1,0 +1,462 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+
+#navbar{
+    position: absolute;
+    display:flex;
+    height: 150px;
+    width: calc(100vw - 17px);
+    border:none;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    
+}
+#logo{
+    display: flex;
+    height:60px;
+    width:150px;
+    margin:10px;
+    padding:10px;
+    margin-left: 10vw;
+    border:none;
+    align-self: left;
+    align-items: center;
+    justify-content: center;
+    flex-shrink:0;
+    color: #fff;
+}
+#logo p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+}
+#navbar ul{
+    display:flex;
+    margin:auto;
+    padding:10px;
+    height:60px;
+    width: 500px;
+    border:none;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink:1;
+    color: #fff;
+}
+#navbar ul li{
+    flex-shrink:1;
+}
+#navbar ul li a{
+    text-decoration: none;
+    flex-shrink:1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    opacity: 0.5;
+
+
+}
+#navbar ul li a:hover{
+    text-decoration: none;
+    flex-shrink:1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    opacity: 1;
+
+
+}
+#contact{
+    display: flex;
+    margin:2vh;
+    margin-right: 100px; 
+    padding:2vh;
+    height:60px;
+    width:180px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    align-self: right;
+}
+#contact .menu img{
+    height:80px;
+    width: 80px;
+    display:none;
+    margin-right: 10vw;
+}
+#contact p{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+#home{
+    
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    border: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+/* #home .disp{
+    display: flex;
+} */
+#home p{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin:30px;
+    margin-top: 10%;
+    width: 60vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    
+}
+
+#home button{
+    color:#fff;
+    border:none;
+    height:50px;
+    width: 150px;
+    border-radius: 25px;
+    align-self:center;
+    font-size: 18px;
+    background-color: rgb(0, 166, 181);
+    /* margin:40px; */
+}
+#home button:hover{
+    
+    border:none;
+    height:50px;
+    width: 150px;
+    border-radius: 25px;
+    align-self:center;
+    font-size: 18px;
+    background-color: rgba(0, 166, 181, 0.804);
+    
+    /* margin:40px; */
+}
+#home::after{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background-color: black;
+    left: 0;
+    top: 0;
+    z-index:-10;
+}
+#home::before{
+    
+    position: absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    border: solid black;
+    background: url("background.jpg") no-repeat center center/cover;
+    z-index:-9;
+    opacity: 0.50;
+    
+}
+@media (max-width:1020px){
+    #menu{
+        display: none;
+    }
+    #navbar ul li{
+        display: none;
+    }
+    #contact .menu img{
+        height:80px;
+        width: 80px;
+        display: flex;
+        
+    }
+    #contact {
+        display: none;
+    }
+
+}
+/* #registration{
+    position: relative;
+    margin: auto;
+    border: solid black;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:180px;
+    background-color: #fff;
+    top: 450px;
+    box-shadow: 20px 20px 40px rgba(48, 48, 48, 0.559);
+    flex-direction: column;
+    
+
+} */
+
+
+#registration{
+    position: relative;
+    margin: auto;
+    border: none;
+    max-width: 90vw;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    min-height: 150px;
+    max-height: fit-content;
+    top: 470px;
+    box-shadow: 20px 20px 40px rgba(180, 180, 180, 0.434);
+    flex-direction: row;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+
+    
+}
+
+#registration .Form{
+    display: grid;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding:2px;
+    border-radius: 50px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    margin: 10px;
+    color:rgb(40, 40, 40)
+    
+}
+#registration .submit{
+    
+    font-size: 20px;
+    background-color: rgb(0, 166, 181);
+    color: #fff;
+    
+}
+#block{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items:  center;
+    position: relative;
+    top: 600px;
+   
+}
+#block h1{
+    align-self: flex-start;
+    margin-left: 5vw;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(0, 166, 181);
+}
+#services{
+    margin-top: 70px;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    border: none;
+    justify-content: center;
+    column-gap: 2px;
+
+}
+
+#services .container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width:336px;
+    border: none;
+    padding: 50px 20px 20px 50px;
+    text-align: left;
+    box-shadow: 20px 20px 40px rgba(180, 180, 180, 0.696),
+    -20px -20px 40px rgba(180, 180, 180, 0.696);
+    margin: 20px;
+
+}
+
+#services .container img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+#services .container h2{
+    padding: 20px 0 20px 0;
+    
+    font-family: 'Rubik', sans-serif;
+}
+
+#services .container p{
+    padding: 0  0 45px 0;
+    color: rgb(125, 125, 125);
+    font-family: 'Rubik', sans-serif;
+}
+@media (max-width:690px){
+    #home p{
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        margin:30px;
+        margin-top: 10%;
+        width: 60vw;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        
+    }
+}
+
+#services .container a{
+    text-decoration: none;
+    color: rgb(125, 125, 125);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+#abHotel{
+    width:100%;
+    border:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 800px;
+    flex-wrap: wrap;
+}
+.left{
+    height: 565px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+
+}
+#abHotel .box1{
+    background-color: rgb(0, 166, 181) ;
+    border:none;
+    width:30vw;
+    height: 565px;
+    position: absolute;
+    z-index: -1;
+}
+#abHotel .text{
+    width: 30vw;
+    margin: 5vw;
+    
+}
+#abHotel .text h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color:rgb(0, 166, 181);
+}
+#abHotel .text p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: rgb(125, 125, 125);
+}
+#abHotel .left img{
+    height:400px;
+    width: 500px;
+    z-index: 2;
+    margin: 80px;
+    
+}
+@media (max-width: 993px){
+    .left{
+        height: 60vw;
+        width: 50vw;
+        display: flex;
+        
+    
+    }
+    #abHotel .left img{
+        
+        width: 75vw;
+        height:auto;
+        margin: 10vw;
+        
+        
+    }
+    #abHotel .text{
+        width: calc(95vw);
+        
+    }
+    #abHotel .box1{
+        
+        height: calc(1.5 * 40vw);
+        
+    }
+}
+#blogpost{
+    margin: auto;
+    margin-top: 70px;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    border: none;
+    justify-content: center;
+    column-gap:2px;
+    position: relative;
+    top:900px;
+    
+}
+#blogpost .container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width:336px;
+    box-shadow: 20px 20px 40px rgba(180, 180, 180, 0.696),
+    -20px -20px 40px rgba(180, 180, 180, 0.696);
+    z-index: 2;
+    background-color: #fff;
+    margin: 20px;
+   
+
+}
+#blogpost .container img{
+    height: 60%;
+    width: 100%;
+}
+#blogpost .container p{
+    margin: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    
+   
+
+}
+footer{
+    position: relative;
+    height: 400px;
+    display: flex;
+    background-color: rgb(0, 166, 181);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 800px;
+    z-index: -1;
+}
+
+
+
