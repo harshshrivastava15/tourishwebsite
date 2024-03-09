@@ -176,6 +176,7 @@
     
 }
 #menuButton{
+    
     border-style: none;
     background-color: rgba(255, 255, 255, 0);
     margin: 10px;
@@ -199,8 +200,10 @@
         border-style: none;
         background-color: rgba(255, 255, 255, 0);
         background-image: url('menu.png');
-        margin: 10px;
+        margin: 20px;
         display: block;
+        position: absolute;
+        right: 0px;
     }
     #menu{
         display: none;
